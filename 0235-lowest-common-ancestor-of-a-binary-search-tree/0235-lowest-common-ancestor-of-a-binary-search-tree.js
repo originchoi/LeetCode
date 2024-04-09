@@ -22,8 +22,8 @@ const lowestCommonAncestor = function(root, p, q) {
         } else if (p.val < currentNode.val && q.val < currentNode.val) {
             currentNode = currentNode.left;
             continue;
+        } else {
+            return currentNode
         }
-
-        return currentNode;
     }
 };
