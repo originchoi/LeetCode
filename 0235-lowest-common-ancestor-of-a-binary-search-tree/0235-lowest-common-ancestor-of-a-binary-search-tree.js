@@ -18,10 +18,8 @@ const lowestCommonAncestor = function(root, p, q) {
     while (currentNode) {
         if (p.val > currentNode.val && q.val > currentNode.val) {
             currentNode = currentNode.right;
-            continue;
         } else if (p.val < currentNode.val && q.val < currentNode.val) {
             currentNode = currentNode.left;
-            continue;
         } else {
             return currentNode
         }
