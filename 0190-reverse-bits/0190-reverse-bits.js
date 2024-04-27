@@ -8,7 +8,7 @@ const reverseBits = function(n) {
     
     for (let i = reversedBits.length - 1; i >= 0; i--) {
         if (reversedBits[i] === "1") {
-            resultDecimal += Math.pow(2, reversedBits.length - 1 - i);
+            resultDecimal += 2 ** (reversedBits.length - 1 - i);
         }
     }
 
