@@ -3,7 +3,7 @@
  * @return {number}
  */
 const majorityElement = function(nums) {
-    // 보이어-무어 알고리즘 적용
+    // 보이어-무어 알고리즘
     let count = 0;
     let majorityNum = null;
 
