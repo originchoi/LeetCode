@@ -8,10 +8,10 @@ const findDuplicates = function(nums) {
     
     for (const num of nums) {
         if (!countNums[num]) {
-            countNums[num] = 1;
-        } else {
-            countNums[num]++;
+            countNums[num] = 0;
         }
+        
+        countNums[num]++;
     }
     
     for (const num in countNums) {
