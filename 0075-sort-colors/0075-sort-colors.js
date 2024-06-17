@@ -5,7 +5,7 @@
 const sortColors = function(nums) {
     let index = 0;
     let left = 0;
-    let right = nums.length -1;
+    let right = nums.length - 1;
 
     while (index <= right && left < right) {
         if (nums[index] === 0) {
